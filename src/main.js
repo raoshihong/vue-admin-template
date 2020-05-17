@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from 'vue' //使用from 'xx'这种方式会自动到node_modules下去寻找对应的模块,看对应模块下是否有暴露vue对象
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
@@ -9,7 +9,7 @@ import locale from 'element-ui/lib/locale/lang/en' // lang i18n
 import '@/styles/index.scss' // global css
 
 import App from './App'
-import store from './store'
+import store from './store' //使用from './xx' 这种方式表示查找相对路径下是否有暴露xx对象
 import router from './router'
 
 import '@/icons' // icon
